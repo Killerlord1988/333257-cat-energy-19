@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Никита Семёнов](https://up.htmlacademy.ru/adaptive/19/user/333257).
-* Наставник: `Неизвестно`.
+* Наставник: [Арсений Березин](https://htmlacademy.ru/profile/id263537).
 
 ---
 
