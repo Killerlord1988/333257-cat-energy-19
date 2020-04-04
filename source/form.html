@@ -9,7 +9,7 @@
 <body>
   <!--header-->
   <header class="page-header">
-    <a class="page-header__logo">
+    <a class="page-header__logo" href="index.html">
       <img class="page-header__logo" src="https://via.placeholder.com/191x39" width="191" height="39"
         alt="Кэт энерджи"></a>
     <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -17,13 +17,13 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Подбор программы</a>
+            <a>Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -31,117 +31,100 @@
   </header>
   <!--main-->
   <main class="page-main">
-    <!--intro-->
-    <section class="intro">
-      <div class="intro__container container">
-        <div class="intro__block">
-          <h1 class="intro__title">Функциональное питание для котов</h1>
-          <p class="intro__lead">Занялся собой? Займись котом!</p>
-          <img class="intro__img-food" src="https://via.placeholder.com/280x270" width="280" height="270"
-            alt="Фотография функциональной еды для кота">
-          <a class="intro__link button" href="form.html">Подобрать программу</a>
+      <!--form-->
+      <section class="title-block">
+        <div class="container">
+          <h1 class="title-block__title">Подбор программы</h1>
+          <p class="title-block__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
         </div>
-      </div>
-    </section>
-    <!--programs-->
-    <section class="programs">
-      <h2 class="visually-hidden">Программы питания</h2>
-      <div class="programs__container container">
-        <div class="programs__program-selection program-selection">
-          <div class="program-selection__item program-selection__item--slim">
-            <h3 class="program-selection__title">Похудение</h3>
-            <p class="program-selection__desc">Ваш кот весит больше собаки и почти утратил способность лазить по
-              деревьям? Пора на диету! Cat Energy Slim поможет
-              вашему питомцу сбросить лишний вес.</p>
-            <a class="program-selection__link" href="catalog-slim.html">Каталог slim</a>
-          </div>
-          <div class="program-selection__item program-selection__item--pro">
-            <h3 class="program-selection__title">Набор массы</h3>
-            <p class="program-selection__desc program-selection__desc--tablet">Заработать авторитет среди дворовых
-              котов и даже собак? Серия Cat
-              Energy Pro поможет вашему коту нарастить необходимые мышцы!
-            </p>
-            <a class="program-selection__link" href="catalog-pro.html">Каталог pro</a>
-          </div>
+      </section>
+
+      <section class="selection">
+        <div class="container">
+          <form action="https://echo.htmlacademy.ru" class="selection__form fields" method="get">
+            <div class="fields__wrapper">
+              <div class="fields__set fields__set--personal">
+                <div class="fields__block">
+                  <label for="catname" class="fields__label">Имя:*</label>
+                  <input type="text" class="fields__textfield" id="catname" name="catname" placeholder="Барсик">
+                </div>
+                <div class="fields__block">
+                  <label for="weight" class="fields__label">Вес (кг):*</label>
+                  <input type="text" class="fields__textfield" id="weight" name="weight" placeholder="7">
+                </div>
+                <div class="fields__block">
+                  <label for="age" class="fields__label">Возраст (лет):</label>
+                  <input type="text" class="fields__textfield" id="age" name="age" placeholder="7">
+                </div>
+              </div>
+              <div class="fields__set fields__set--program">
+                <ul class="fields__list program-type-list">
+                  <li class="program-type-list__item">
+                    <input type="radio" class="program-type-list__input" name="program" value="slim" id="slim" checked>
+                    <label for="slim" class="program-type-list__label" tabindex="0">Похудение</label>
+                  </li>
+                  <li class="program-type-list__item">
+                    <input type="radio" class="program-type-list__input" name="program" value="mass" id="mass">
+                    <label for="mass" class="program-type-list__label" tabindex="0">Набор массы</label>
+                  </li>
+                  <li class="program-type-list__item">
+                    <input type="radio" class="program-type-list__input" name="program" value="advice" id="advice">
+                    <label for="advice" class="program-type-list__label" tabindex="0">Не знаю (нужен ваш совет)</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="fields__set fields__set--contacts">
+                <div class="fields__head">
+                  <h2 class="fields__title">Контактные данные (владельца кота)</h2>
+                </div>
+                <div class="fields__inner">
+                  <div class="fields__block">
+                    <label for="email" class="fields__label">E-mail:*</label>
+                    <input type="email" class="fields__textfield" id="email" name="email" placeholder="kuklachev@gmail.com">
+                  </div>
+                  <div class="fields__block">
+                    <label for="phone" class="fields__label">Телефон:*</label>
+                    <input type="tel" class="fields__textfield" id="phone" name="phone" placeholder="8 (960) 900-60-90">
+                  </div>
+                </div>
+              </div>
+              <div class="fields__set fields__set--descr">
+                <div class="fields__head">
+                  <h2 class="fields__title">Комментарий</h2>
+                </div>
+                <textarea class="fields__textarea" name="additional" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </div>
+              <div class="fields__set fields__set--add">
+                <div class="fields__head">
+                  <h2 class="fields__title">Дополнительно</h2>
+                </div>
+                <ul class="fields__list add-list">
+                  <li class="add-list__item">
+                    <input type="checkbox" class="add-list__input" name="sweetener" id="sweetener" checked>
+                    <label for="sweetener" class="add-list__label" tabindex="0">Сахарозаменитель</label>
+                  </li>
+                  <li class="add-list__item">
+                    <input type="checkbox" class="add-list__input" name="water" id="water">
+                    <label for="water" class="add-list__label" tabindex="0">Питьевая вода</label>
+                  </li>
+                  <li class="add-list__item">
+                    <input type="checkbox" class="add-list__input" name="milk" id="milk">
+                    <label for="milk" class="add-list__label" tabindex="0">Молоко</label>
+                  </li>
+                  <li class="add-list__item">
+                    <input type="checkbox" class="add-list__input" name="vitamins" id="vitamins">
+                    <label for="vitamins" class="add-list__label" tabindex="0">Витамины</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="fields__button-block">
+                <button class="fields__button button" type="submit">Отправить заявку</button>
+                <span class="fields__note">* — Обязательные поля</span>
+              </div>
+            </div>
+          </form>
         </div>
-      </div>
-    </section>
-    <!--how it's work-->
-    <section class="list">
-      <div class="list__container container">
-        <h3 class="list__title">Как это работает</h3>
-        <ul class="list__block">
-          <li class="list__item">
-            <div class="list__green-box">
-              <img class="list__img" src="https://via.placeholder.com/60x60" alt="лист">
-            </div>
-            <p class="list__text list__text--one">Функциональное питание содержит только полезные питательные вещества.
-            </p>
-          </li>
-          <li class="list__item">
-            <div class="list__green-box">
-              <img class="list__img" src="https://via.placeholder.com/60x60" alt="пример порошка">
-            </div>
-            <p class="list__text list__text--two">Выпускается в виде порошка, который нужно лишь залить кипятком и
-              готово.</p>
-          </li>
-          <li class="list__item">
-            <div class="list__green-box">
-              <img class="list__img" src="https://via.placeholder.com/60x60" alt="прием пищи">
-            </div>
-            <p class="list__text list__text--three">Замените один-два приема обычной еды на наше функциональное
-              питание.</p>
-          </li>
-          <li class="list__item">
-            <div class="list__green-box">
-              <img class="list__img" src="https://via.placeholder.com/60x60" alt="будильник">
-            </div>
-            <p class="list__text list__text--four">Уже через месяц наслаждайтесь изменениями к лучшему
-              вашего питомца!</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!--example-->
-    <section class="example">
-      <div class="example__container container">
-        <h3 class="example__title">Живой пример</h3>
-        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-          Отличный результат без изнуряющих
-          тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <div class="example__item">
-          <div class="example__item-block">
-            <div class="example__item-stats">
-              <p class="example__stats-value example__stats-value--kg">5 кг</p>
-            </div>
-            <div class="example__item-stats">
-              <p class="example__stats-value example__stats-value--date ">60 дней</p>
-            </div>
-            <p class="example__price">Затраты на питание:
-              15 000 руб.</p>
-          </div>
-        </div>
-      </div>
-      <div class="example__container-full"></div>
-      <div class="example__container container">
-        <div class="example__slider">
-          <input class="example__slider-input example__slider-input--before" type="radio" id="example-input-before"
-            name="example-story" checked="">
-          <input class="example__slider-input example__slider-input--after" type="radio" id="example-input-after"
-            name="example-story">
-          <div class="example__slider-img example__slider-img--before"></div>
-          <div class="example__slider-img example__slider-img--after"></div>
-          <div class="example__toggle-control">
-            <label class="example__toggle example__toggle-label example__toggle-label--before"
-              for="example-input-before">Было</label>
-            <div class="example__toggle example__toggle-scale"></div>
-            <label class="example__toggle example__toggle-label example__toggle-label--after"
-              for="example-input-after">Стало</label>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
   </main>
   <!--footer-->
   <footer class="footer">
@@ -212,4 +195,5 @@
     </div>
   </footer>
 </body>
+
 </html>
