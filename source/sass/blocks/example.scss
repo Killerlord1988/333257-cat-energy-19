@@ -1,0 +1,110 @@
+.example__container {
+  padding-bottom: 10px;
+  background-color: $grey-bg;
+}
+
+.example__title {
+  margin-top: -1px;
+  margin-bottom: 22px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.example__text {
+  width: 96%;
+  margin-bottom: 0;
+  font-family: $second-font;
+}
+
+.example__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.example__item-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.example__item-stats {
+  display: flex;
+}
+
+.example__stats-value {
+  position: relative;
+
+  align-items: stretch;
+
+  width: 124px;
+  margin-top: 26px;
+  padding-top: 13px;
+  padding-right: 11px;
+  padding-bottom: 17px;
+  padding-left: 11px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 2px;
+}
+
+.example__stats-value--kg::after {
+  content: "снижение веса";
+
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: stretch;
+  padding-top: 0;
+  padding-right: 10px;
+  padding-bottom: 0;
+  padding-left: 10px;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: $second-font;
+  text-align: center;
+  text-transform: lowercase;
+
+  background-color: $grey-bg;
+}
+
+.example__stats-value--date::after {
+  content: "затрачено времени";
+
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: stretch;
+  padding-top: 0;
+  padding-right: 10px;
+  padding-bottom: 0;
+  padding-left: 10px;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: $second-font;
+  text-align: center;
+  text-transform: lowercase;
+
+  background-color: $grey-bg;
+}
+
+.example__price {
+  width: 100%;
+  margin-top: 11px;
+  margin-right: auto;
+  margin-bottom: 16px;
+  margin-left: auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+

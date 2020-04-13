@@ -3,27 +3,30 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
 <body>
   <!--header-->
   <header class="page-header">
+    <div class="page-header__wrapper">
     <a class="page-header__logo" href="index.html">
       <img class="page-header__logo" src="https://via.placeholder.com/191x39" width="191" height="39"
         alt="Кэт энерджи"></a>
     <button class="main-nav__toggle" type="button">Открыть меню</button>
+  </div>
     <nav class="main-nav">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
           <li class="site-list__item site-list__item--active">
-            <a href="index.html">Главная</a>
+            <a class="site-list__link">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a>Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Подбор программы</a>
+            <a class="site-list__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -64,7 +67,7 @@
                 <a class="food__button button" href="order.html">Заказать</a>
               </div>
             </li>
-            <li class=class="food__catalog-item">
+            <li class="food__catalog-item">
               <div class="food__img-block">
                 <img class="food__img" src="https://via.placeholder.com/140x144" alt="Фотография еды">
               </div>
@@ -91,7 +94,7 @@
                 <a class="food__button button" href="order.html">Заказать</a>
               </div>
             </li>
-            <li class=class="food__catalog-item">
+            <li class="food__catalog-item">
               <div class="food__img-block food__img-block--top">
                 <img class="food__img" src="https://via.placeholder.com/140x144" alt="Фотография еды">
               </div>
@@ -118,7 +121,7 @@
                 <a class="food__button button" href="order.html">Заказать</a>
               </div>
             </li>
-            <li class=class="food__catalog-item">
+            <li class="food__catalog-item">
               <div class="food__img-block">
                 <img class="food__img" src="https://via.placeholder.com/140x144" alt="Фотография еды">
               </div>
@@ -145,7 +148,7 @@
                 <a class="food__button button" href="order.html">Заказать</a>
               </div>
             </li>
-            <li class=class="food__catalog-item">
+            <li class="food__catalog-item">
               <div class="food__img-block food__img-block--top">
                 <img class="food__img" src="https://via.placeholder.com/140x144" alt="Фотография еды">
               </div>
@@ -172,7 +175,7 @@
                 <a class="food__button button" href="order.html">Заказать</a>
               </div>
             </li>
-            <li class=class="food__catalog-item">
+            <li class="food__catalog-item">
               <div class="food__img-block">
                 <img class="food__img" src="https://via.placeholder.com/140x144" alt="Фотография еды">
               </div>
@@ -199,7 +202,7 @@
                 <a class="food__button button" href="order.html">Заказать</a>
               </div>
             </li>
-            <li class=class="food__catalog-item">
+            <li class="food__catalog-item">
               <div class="food__img-block food__img-block--top">
                 <img class="food__img" src="https://via.placeholder.com/140x144" alt="Фотография еды">
               </div>
@@ -226,7 +229,7 @@
                 <a class="food__button button" href="order.html">Заказать</a>
               </div>
             </li>
-            <li class=class="food__see-more">
+            <li class="food__see-more">
               <div class="food__plus"></div>
               <p class="food__title-more">Показать еще 100500 товаров</p>
               <p class="food__title-desc">На самом деле вкусов гораздо больше!</p>
@@ -326,8 +329,7 @@
       </div>
     </div>
     <div class="footer__container-map">
-      <div class="footer__map" id="map"><img src="https://via.placeholder.com/320x400"
-          alt="Мы находимся на ул. Большая Конюшенная, д. 19/8"></div>
+      <div class="footer__map" id="map"></div>
     </div>
     <div class="footer__container footer__container-bottom container ">
       <div class="footer__social social">

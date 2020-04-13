@@ -1,0 +1,86 @@
+.sec-goods {
+  position: relative;
+  margin-bottom: 34px;
+}
+
+.sec-goods__greenline-catalog::before {
+  content: "";
+  position: absolute;
+  top: 65px;
+  left: 23px;
+  z-index: -1;
+  width: 92%;
+  height: 3px;
+  background-color: #65a93c;
+}
+
+.sec-goods__header {
+  display: inline-block;
+  margin-bottom: 1px;
+  margin-left: -1px;
+  padding-top: 30px;
+  padding-right: 21px;
+  padding-bottom: 34px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  background-color: white;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.sec-goods__block {
+  margin-bottom: 37px;
+}
+
+.sec-goods__list {
+  padding: 0;
+  margin: 0;
+
+}
+
+.sec-goods__item {
+  list-style: none;
+  margin-top: 12px;
+  padding-bottom: 17px;
+
+  border-bottom: 1px solid $grey-bg;
+}
+
+.sec-goods__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-left: 1px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.sec-goods__table {
+  width: 102%;
+  margin-bottom: 14px;
+  margin-left: -3px;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "Arial", "Helvetica", sans-serif;
+  color: #444444;
+}
+
+.sec-goods__amount {
+  padding: 0;
+}
+
+.sec-goods__price {
+  padding: 0;
+  text-align: right;
+}
+
+.sec-goods__button {
+  padding-top: 4%;
+  padding-right: 25%;
+  padding-bottom: 3.6%;
+  padding-left: 25%;
+  font-size: 16px;
+  line-height: 20px;
+}

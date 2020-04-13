@@ -1,0 +1,88 @@
+@font-face {
+  font-weight: 500;
+  font-family: "Oswald";
+  font-style: normal;
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../fonts/oswaldmedium.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "Oswald";
+  font-style: normal;
+  src: url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $main-font;
+  color: $font-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  font-weight: 400;
+  font-family: $main-font;
+  color: $font-color;
+  text-decoration: none;
+}
+
+a:active,
+a:focus {
+  outline: none;
+}
+
+.button {
+  display: block;
+  margin-right: auto;
+  padding: 4% 25% 4% 25%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  background-color: $green-bg;
+  border: none;
+}
+
+.food__button:hover,
+.form__button:hover,
+.sec-goods__button:hover,
+.intro__link:hover {
+  background-color: #5eaa2f;
+  transition: background-color ease-in-out 0.3s;
+}
+
+.food__button-more:hover {
+  background-color: #ebebeb;
+  transition: background-color ease-in-out 0.3s;
+}
+
+.food__button:active,
+.form__button:active,
+.sec-goods__button:active,
+.intro__link:active {
+  color: rgba(#ffffff, 0.3);
+}
+
+.food__button-more:active {
+  color: rgba($color: #444444, $alpha: 0.3);
+  transition: color ease-in-out 0.3s;
+}

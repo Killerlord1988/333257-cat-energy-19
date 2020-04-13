@@ -1,0 +1,188 @@
+.food__header {
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.food__catalog-list {
+  padding: 0;
+  margin: 0;
+}
+
+.food__catalog-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+
+.food__img-block {
+  width: 50%;
+}
+
+.food__img {
+  width: 100%;
+  max-width: 170px;
+}
+
+.food__table-block {
+  align-self: center;
+  width: 50%;
+  padding-bottom: 23px;
+}
+
+.food__item {
+  width: 100%;
+  margin-right: 0;
+}
+
+.food__title {
+  width: 54%;
+  margin-top: 22px;
+  margin-bottom: 12px;
+  padding-bottom: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.food__table {
+  width: 102%;
+  margin-top: 0;
+}
+
+
+.food__desc {
+  font-size: 12px;
+  line-height: 14px;
+  font-family: $second-font;
+  color: #444444;
+}
+
+.food__wt {
+  padding: 0;
+  padding-right: 55px;
+}
+
+.food__gr {
+  padding: 0;
+  text-align: right;
+}
+
+.food__taste {
+  padding: 0;
+}
+
+.food__meat {
+  padding: 0;
+  text-align: right;
+}
+
+.food__price {
+  padding: 0;
+}
+
+.food__bet {
+  padding: 0;
+  text-align: right;
+}
+
+
+.food__button {
+  width: 100%;
+  margin-top: -2px;
+  padding-top: 4%;
+  padding-right: 25%;
+  padding-bottom: 3%;
+  padding-left: 25%;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.food__table-button {
+  width: 100%;
+}
+
+.food__see-more {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 41px;
+
+  border-top: 1px solid $grey-bg;
+
+  cursor: pointer;
+}
+
+.food__plus {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.food__plus::before {
+
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 30px;
+  height: 2px;
+
+  background-color: $grey-bg;
+  transform: rotate(90deg);
+}
+
+.food__plus::after {
+
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 30px;
+  height: 2px;
+
+  background-color: $grey-bg;
+}
+
+.food__title-more {
+  margin-top: 9px;
+  margin-bottom: 7px;
+  margin-left: 2px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.food__title-desc {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-family: $second-font;
+  text-align: center;
+  color: #444444;
+}
+
+.food__button-more {
+
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $main-font;
+  color: #444444;
+  background-color: $grey-bg;
+  border: none;
+
+  cursor: pointer;
+}
