@@ -3,27 +3,32 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
 <body>
   <!--header-->
   <header class="page-header">
+    <div class="page-header__wrapper">
     <a class="page-header__logo" href="index.html">
       <img class="page-header__logo" src="https://via.placeholder.com/191x39" width="191" height="39"
         alt="Кэт энерджи"></a>
     <button class="main-nav__toggle" type="button">Открыть меню</button>
+  </div>
     <nav class="main-nav">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+          </li>
           <li class="site-list__item site-list__item--active">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a>Подбор программы</a>
+            <a class="site-list__link">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -61,15 +66,15 @@
                 <ul class="fields__list program-type-list">
                   <li class="program-type-list__item">
                     <input type="radio" class="program-type-list__input" name="program" value="slim" id="slim" checked>
-                    <label for="slim" class="program-type-list__label" tabindex="0">Похудение</label>
+                    <label for="slim" class="program-type-list__label">Похудение</label>
                   </li>
                   <li class="program-type-list__item">
                     <input type="radio" class="program-type-list__input" name="program" value="mass" id="mass">
-                    <label for="mass" class="program-type-list__label" tabindex="0">Набор массы</label>
+                    <label for="mass" class="program-type-list__label">Набор массы</label>
                   </li>
                   <li class="program-type-list__item">
                     <input type="radio" class="program-type-list__input" name="program" value="advice" id="advice">
-                    <label for="advice" class="program-type-list__label" tabindex="0">Не знаю (нужен ваш совет)</label>
+                    <label for="advice" class="program-type-list__label">Не знаю (нужен ваш совет)</label>
                   </li>
                 </ul>
               </div>
@@ -101,19 +106,19 @@
                 <ul class="fields__list add-list">
                   <li class="add-list__item">
                     <input type="checkbox" class="add-list__input" name="sweetener" id="sweetener" checked>
-                    <label for="sweetener" class="add-list__label" tabindex="0">Сахарозаменитель</label>
+                    <label for="sweetener" class="add-list__label">Сахарозаменитель</label>
                   </li>
                   <li class="add-list__item">
                     <input type="checkbox" class="add-list__input" name="water" id="water">
-                    <label for="water" class="add-list__label" tabindex="0">Питьевая вода</label>
+                    <label for="water" class="add-list__label">Питьевая вода</label>
                   </li>
                   <li class="add-list__item">
                     <input type="checkbox" class="add-list__input" name="milk" id="milk">
-                    <label for="milk" class="add-list__label" tabindex="0">Молоко</label>
+                    <label for="milk" class="add-list__label">Молоко</label>
                   </li>
                   <li class="add-list__item">
                     <input type="checkbox" class="add-list__input" name="vitamins" id="vitamins">
-                    <label for="vitamins" class="add-list__label" tabindex="0">Витамины</label>
+                    <label for="vitamins" class="add-list__label">Витамины</label>
                   </li>
                 </ul>
               </div>
@@ -138,7 +143,7 @@
       </div>
     </div>
     <div class="footer__container-map">
-      <div class="footer__map" id="map"><img src="https://via.placeholder.com/320x400" alt="Мы находимся на ул. Большая Конюшенная, д. 19/8"></div>
+      <div class="footer__map" id="map"></div>
     </div>
     <div class="footer__container footer__container-bottom container ">
       <div class="footer__social social">

@@ -1,0 +1,61 @@
+.add-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  margin-top: 14px;
+}
+
+.add-list__input {
+  opacity: 0;
+}
+
+.add-list__item {
+  position: relative;
+  margin-bottom: 13px;
+}
+
+.add-list__label {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $font-color;
+  margin-left: 16px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ededed;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      border-color: #bcbcbc;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.add-list__input:checked + .add-list__label::before {
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 70%;
+}
+
+.add-list__input:focus + .add-list__label {
+  outline: 1px solid aquamarine;
+}

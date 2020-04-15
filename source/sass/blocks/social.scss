@@ -1,0 +1,129 @@
+.social__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.social__logo-footer {
+  display: inline-block;
+  width: 129px;
+  height: 49px;
+  margin-top: 12px;
+  background-image: url("../img/logo-footer.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  transition: opasity ease-in-out 0.3s;
+}
+
+.social__logo-footer:hover {
+  opacity: 0.8;
+  transition: opasity ease-in-out 0.3s;
+}
+
+.social__logo-footer:active {
+  opacity: 0.6;
+  transition: opasity ease-in-out 0.3s;
+}
+
+.social__items {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+  margin-top: 6px;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 16px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.social__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.social__svg {
+  fill: #666666;
+}
+
+.social__item:hover {
+  transition: fill ease-in-out 0.3s;
+  fill: $green-bg;
+}
+
+.social__item:active {
+  opacity: 0.6;
+  transition: opasity ease-in-out 0.3s;
+}
+
+.social__item:active .social__svg {
+  fill: $green-bg;
+}
+
+.social__link {
+  width: 22px;
+  height: 22px;
+
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social__item--vk {
+  margin-right: 38px;
+  margin-top: 5px;
+}
+
+.social__svg--vk {
+  width: 23px;
+}
+
+.social__item--inst {
+  margin-top: 1px;
+  margin-right: 35px;
+}
+
+.social__svg--inst {
+  width: 17px;
+}
+
+.social__item--fb {
+  margin-bottom: 1px;
+  margin-right: 0;
+}
+
+.social__svg--fb {
+  width: 10px;
+}
+
+.social__link-academy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.social__link-academy:active {
+  opacity: 0.6;
+  transition: opasity ease-in-out 0.3s;
+}
+
+.social__link-academy:hover .social__academy-logo--svg {
+  fill: $green-bg;
+  transition: fill ease-in-out 0.3s;
+}
+
+.social__academy-text {
+  margin-left: -2px;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: $second-font;
+  color: #666666;
+}

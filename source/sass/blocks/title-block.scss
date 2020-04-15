@@ -1,0 +1,20 @@
+.title-block {
+  padding-top: 14px;
+  padding-bottom: 29px;
+}
+
+.title-block__title {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: normal;
+  color: $font-color;
+  margin: 0;
+}
+
+.title-block__text {
+  text-transform: uppercase;
+  color: $font-color;
+  width: 85%;
+  margin-top: 27px;
+  margin-bottom: 0;
+}
