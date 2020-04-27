@@ -9,12 +9,33 @@
   font-weight: normal;
   color: $font-color;
   margin: 0;
+  margin-bottom: 27px;
 }
 
 .title-block__text {
   text-transform: uppercase;
   color: $font-color;
   width: 85%;
-  margin-top: 27px;
-  margin-bottom: 0;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .title-block__title {
+    font-size: 60px;
+    margin-bottom: 53px;
+  }
+
+  .title-block__text {
+    width: 55%;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title-block__text {
+    width: 330px;
+    margin-left: 0;
+  }
 }

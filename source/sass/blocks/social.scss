@@ -7,13 +7,15 @@
 
 .social__logo-footer {
   display: inline-block;
+  vertical-align: middle;
   width: 129px;
-  height: 49px;
-  margin-top: 12px;
+  height: 24px;
   background-image: url("../img/logo-footer.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   transition: opasity ease-in-out 0.3s;
+  margin-top: 40px;
+  margin-bottom: 29px;
 }
 
 .social__logo-footer:hover {
@@ -42,12 +44,16 @@
 }
 
 .social__item {
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   list-style: none;
-  margin-right: 0;
-  margin-left: 0;
+  margin-right: 36px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .social__svg {
@@ -69,38 +75,14 @@
 }
 
 .social__link {
-  width: 22px;
-  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 23px;
+  height: 23px;
 
   background-repeat: no-repeat;
   background-position: 50% 50%;
-}
-
-.social__item--vk {
-  margin-right: 38px;
-  margin-top: 5px;
-}
-
-.social__svg--vk {
-  width: 23px;
-}
-
-.social__item--inst {
-  margin-top: 1px;
-  margin-right: 35px;
-}
-
-.social__svg--inst {
-  width: 17px;
-}
-
-.social__item--fb {
-  margin-bottom: 1px;
-  margin-right: 0;
-}
-
-.social__svg--fb {
-  width: 10px;
 }
 
 .social__link-academy {
@@ -110,20 +92,79 @@
   width: 100%;
 }
 
-.social__link-academy:active {
-  opacity: 0.6;
-  transition: opasity ease-in-out 0.3s;
-}
-
-.social__link-academy:hover .social__academy-logo--svg {
-  fill: $green-bg;
-  transition: fill ease-in-out 0.3s;
-}
-
 .social__academy-text {
   margin-left: -2px;
   font-weight: 400;
   font-size: 16px;
   font-family: $second-font;
   color: #666666;
+}
+
+.social__academy-logo--svg {
+  width: 27px;
+  height: 34px;
+}
+
+.social__link-academy:hover .social__academy-logo--svg {
+  fill: $green-bg;
+}
+
+.social__link-academy:hover .social__academy-text {
+  color: $green-bg;
+}
+
+.social__link-academy:active {
+  opacity: 0.6;
+  transition: opasity ease-in-out 0.3s;
+}
+
+@media (min-width: $tablet-width) {
+  .social__block {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .social__logo-footer {
+    margin: 0;
+    width: 160px;
+    height: 24px;
+  }
+
+  .social__items {
+    width: 50%;
+    border: none;
+  }
+
+  .social__item {
+    margin-right: 30px;
+  }
+
+  .social__link {
+    width: 30px;
+    height: 30px;
+  }
+
+  .social__svg--vk {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__svg--inst {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__svg--fb {
+    width: 14px;
+    height: 28px;
+  }
+
+  .social__link-academy {
+    width: 160px;
+  }
+
+  .social__academy-logo--svg {
+    width: 27px;
+    height: 34px;
+  }
 }

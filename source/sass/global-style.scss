@@ -50,8 +50,9 @@ a:focus {
 
 .button {
   display: block;
-  margin-right: auto;
-  padding: 4% 25% 4% 25%;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;

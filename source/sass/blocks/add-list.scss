@@ -21,7 +21,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $font-color;
-  margin-left: 16px;
+  margin-left: 30px;
   padding-top: 6px;
   padding-bottom: 6px;
   cursor: pointer;
@@ -58,4 +58,45 @@
 
 .add-list__input:focus + .add-list__label {
   outline: 1px solid aquamarine;
+}
+
+@media (min-width: $tablet-width) {
+  .add-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .add-list__item {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+
+  .add-list__label {
+    font-size: 20px;
+    line-height: 20px;
+
+    margin-left: 50px;
+
+    &::before {
+      top: -5px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+  }
+
+  .add-list__item {
+    width: 22%;
+    margin: 0;
+  }
 }

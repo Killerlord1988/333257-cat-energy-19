@@ -7,3 +7,17 @@
   padding-bottom: 0;
   padding-left: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .container {
+    min-width: 708px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1220px;
+  }
+}

@@ -11,16 +11,21 @@
 
 <body>
   <!--header-->
-  <header class="page-header">
+  <header class="page-header container no-js">
     <div class="page-header__wrapper">
     <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo" src="https://via.placeholder.com/191x39" width="191" height="39"
-        alt="Кэт энерджи"></a>
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <img class="page-header__logo-img" src="img/logo-mobile.svg" width="191" height="39"
+        alt="Кэт энерджи">
+        <img class="page-header__logo-img page-header__logo-img--tablet" src="img/logo-tablet.svg" alt="Cat Energy"
+          width="185" height="70">
+        <img class="page-header__logo-img page-header__logo-img--desktop" src="img/logo-desktop.svg" alt="Cat Energy"
+          width="202" height="59">
+      </a>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
   </div>
     <nav class="main-nav">
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list main-nav__items">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
@@ -44,7 +49,11 @@
           <ul class="food__catalog-list">
             <li class="food__catalog-item">
               <div class="food__img-block food__img-block--top">
-                <img class="food__img" src="https://via.placeholder.com/140x144" alt="Фотография еды">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
+                  <img class="food__img" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" alt="Фотография еды">
+                </picture>
               </div>
               <div class="food__table-block">
                 <div class="food__item">
@@ -71,7 +80,11 @@
             </li>
             <li class="food__catalog-item">
               <div class="food__img-block">
-                <img class="food__img" src="https://via.placeholder.com/140x144" alt="Фотография еды">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
+                  <img class="food__img" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" alt="Фотография еды">
+                </picture>
               </div>
               <div class="food__table-block">
                 <div class="food__item">
@@ -98,7 +111,11 @@
             </li>
             <li class="food__catalog-item">
               <div class="food__img-block food__img-block--top">
-                <img class="food__img" src="https://via.placeholder.com/140x144" alt="Фотография еды">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
+                  <img class="food__img" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" alt="Фотография еды">
+                </picture>
               </div>
               <div class="food__table-block">
                 <div class="food__item">
@@ -125,7 +142,11 @@
             </li>
             <li class="food__catalog-item">
               <div class="food__img-block">
-                <img class="food__img" src="https://via.placeholder.com/140x144" alt="Фотография еды">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
+                  <img class="food__img" src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" alt="Фотография еды">
+                </picture>
               </div>
               <div class="food__table-block">
                 <div class="food__item">
@@ -152,7 +173,11 @@
             </li>
             <li class="food__catalog-item">
               <div class="food__img-block food__img-block--top">
-                <img class="food__img" src="https://via.placeholder.com/140x144" alt="Фотография еды">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
+                  <img class="food__img" src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="Фотография еды">
+                </picture>
               </div>
               <div class="food__table-block">
                 <div class="food__item">
@@ -179,7 +204,11 @@
             </li>
             <li class="food__catalog-item">
               <div class="food__img-block">
-                <img class="food__img" src="https://via.placeholder.com/140x144" alt="Фотография еды">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
+                  <img class="food__img" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Фотография еды">
+                </picture>
               </div>
               <div class="food__table-block">
                 <div class="food__item">
@@ -206,7 +235,11 @@
             </li>
             <li class="food__catalog-item">
               <div class="food__img-block food__img-block--top">
-                <img class="food__img" src="https://via.placeholder.com/140x144" alt="Фотография еды">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
+                  <img class="food__img" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" alt="Фотография еды">
+                </picture>
               </div>
               <div class="food__table-block">
                 <div class="food__item">
@@ -310,7 +343,7 @@
                   c0.4,0,0.7,0.3,0.7,0.7V24.7z"></path>
                     </svg>
                   </div>
-                  <h3 class="bonus__title">Закажите все и получите чехол для кота в подарок!</h3>
+                  <h3 class="bonus__title">Закажите все и&nbsp;получите чехол для кота в подарок!</h3>
                 </div>
               </a>
             </div>
@@ -336,8 +369,7 @@
     <div class="footer__container footer__container-bottom container ">
       <div class="footer__social social">
         <div class="social__block">
-          <div class="social__logo-footer"><img src="https://via.placeholder.com/128x24" width="128" width="24"
-              alt="Кэт энерджи"></div>
+          <div class="social__logo-footer"></div>
           <ul class="social__items">
             <li class="social__item social__item--vk">
               <a class="social__link" href="#" target="_blank">
@@ -388,6 +420,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/main-nav.js"></script>
 </body>
 
 </html>
