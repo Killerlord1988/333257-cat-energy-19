@@ -31,22 +31,143 @@
 }
 
 .list__green-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 60px;
   height: 60px;
   margin-right: 20px;
-
   background-color: $green-bg;
 }
 
-.list__text-block {
-  width: 160px;
-}
-
 .list__text {
-
-  width: 200px;
+  width: 70%;
   margin: 0;
   margin-top: 2px;
   font-family: $second-font;
   color: $second-font-color;
+}
+
+@media (min-width: $tablet-width) {
+  .list {
+    margin: 0;
+    margin-top: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid $grey-bg;
+  }
+
+  .list__block {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  .list__title {
+
+    margin-top: 17px;
+    margin-bottom: 22px;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .list__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 83px;
+  }
+
+  .list__green-box {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 30px;
+    background-color: $green-bg;
+  }
+
+  .list__text {
+    width: 250px;
+    margin: 0;
+    margin-top: 2px;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Arial", "Helvetica", sans-serif;
+
+    color: #444444;
+  }
+
+  .list__text--one::after {
+    content: "1";
+    position: absolute;
+    top: -41px;
+    left: 118px;
+    z-index: -1;
+    font-weight: 400;
+    font-size: 281px;
+    line-height: 281px;
+    font-family: $main-font;
+    color: #f2f2f2;
+  }
+
+  .list__text--two::after {
+    content: "2";
+    position: absolute;
+    top: -39px;
+    left: 111px;
+    z-index: -1;
+    font-size: 281px;
+    line-height: 281px;
+    font-family: $main-font;
+    color: #f2f2f2;
+  }
+
+  .list__text--three::after {
+    content: "3";
+    position: absolute;
+    top: -37px;
+    left: 113px;
+    z-index: -1;
+    font-size: 281px;
+    line-height: 281px;
+    font-family: $main-font;
+    color: #f2f2f2;
+  }
+
+  .list__text--four::after {
+    content: "4";
+    position: absolute;
+    top: -39px;
+    left: 113px;
+    z-index: -1;
+    font-size: 281px;
+    line-height: 281px;
+    font-family: $main-font;
+    color: #f2f2f2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .list {
+    border: none;
+  }
+
+  .list__item {
+    width: 20%;
+  }
+
+  .list__text--one::after,
+  .list__text--two::after,
+  .list__text--three::after,
+  .list__text--four::after {
+    left: auto;
+    right: 0;
+  }
 }
