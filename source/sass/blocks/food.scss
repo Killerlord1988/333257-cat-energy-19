@@ -5,7 +5,7 @@
   line-height: 60px;
 }
 
-.food__catalog-list {
+.food__catalog-wrapper {
   padding: 0;
   margin: 0;
 }
@@ -191,7 +191,7 @@
     font-size: 60px;
   }
 
-  .food__catalog-list {
+  .food__catalog-wrapper {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

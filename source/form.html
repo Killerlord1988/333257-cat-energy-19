@@ -14,11 +14,11 @@
   <header class="page-header container no-js">
     <div class="page-header__wrapper">
     <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-img" src="img/logo-mobile.svg" width="191" height="39" alt="Кэт энерджи">
-      <img class="page-header__logo-img page-header__logo-img--tablet" src="img/logo-tablet.svg" alt="Cat Energy"
-        width="185" height="70">
-      <img class="page-header__logo-img page-header__logo-img--desktop" src="img/logo-desktop.svg" alt="Cat Energy"
-        width="202" height="59">
+      <picture>
+        <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="Cat Energy" width="191" height="39">
+      </picture>
     </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
   </div>
@@ -52,8 +52,8 @@
         <div class="container">
           <form action="https://echo.htmlacademy.ru" class="selection__form fields" method="get">
             <div class="fields__wrapper">
-              <div class="fields__wrapper-personal-program">
-              <div class="fields__set fields__set--personal">
+              <ul class="fields__wrapper-personal-program">
+              <li class="fields__set fields__set--personal">
                 <div class="fields__block">
                   <label for="catname" class="fields__label">Имя:*</label>
                   <input type="text" class="fields__textfield" id="catname" name="catname" placeholder="Барсик">
@@ -66,8 +66,8 @@
                   <label for="age" class="fields__label">Возраст (лет):</label>
                   <input type="text" class="fields__textfield" id="age" name="age" placeholder="7">
                 </div>
-              </div>
-              <div class="fields__set fields__set--program">
+              </li>
+              <li class="fields__set fields__set--program">
                 <ul class="fields__list program-type-list">
                   <li class="program-type-list__item">
                     <input type="radio" class="program-type-list__input" name="program" value="slim" id="slim" checked>
@@ -82,9 +82,10 @@
                     <label for="advice" class="program-type-list__label">Не знаю (нужен ваш совет)</label>
                   </li>
                 </ul>
-              </div>
-            </div>
-              <div class="fields__set fields__set--contacts">
+              </li>
+            </ul>
+            <ul class="fields__wrapper-contacts-descr-add">
+              <li class="fields__set fields__set--contacts">
                 <div class="fields__head">
                   <h2 class="fields__title">Контактные данные (владельца кота)</h2>
                 </div>
@@ -104,14 +105,14 @@
                     </svg>
                   </div>
                 </div>
-              </div>
-              <div class="fields__set fields__set--descr">
+              </li>
+              <li class="fields__set fields__set--descr">
                 <div class="fields__head">
                   <h2 class="fields__title">Комментарий</h2>
                 </div>
                 <textarea class="fields__textarea" name="additional" placeholder="Расскажите обо всех повадках кота"></textarea>
-              </div>
-              <div class="fields__set fields__set--add">
+              </li>
+              <li class="fields__set fields__set--add">
                 <div class="fields__head">
                   <h2 class="fields__title">Дополнительно</h2>
                 </div>
@@ -133,7 +134,8 @@
                     <label for="vitamins" class="add-list__label">Витамины</label>
                   </li>
                 </ul>
-              </div>
+              </li>
+            </ul>
               <div class="fields__button-block">
                 <button class="fields__button button" type="submit">Отправить заявку</button>
                 <span class="fields__note">* — Обязательные поля</span>

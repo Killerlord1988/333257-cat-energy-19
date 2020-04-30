@@ -3,7 +3,14 @@
   padding-bottom: 31px;
 }
 
+.fields__wrapper-personal-program,
+.fields__wrapper-contacts-descr-add {
+  margin: 0;
+  padding: 0;
+}
+
 .fields__set {
+  list-style: none;
   padding-bottom: 9px;
 
   &--personal {
@@ -224,6 +231,9 @@
     padding-right: 40px;
   }
 
+  // .fields__textarea {
+  // }
+
   .fields__inner {
     margin-left: 40px;
     margin-right: 40px;
@@ -293,6 +303,12 @@
     margin-bottom: 70px;
   }
 
+  .fields__title {
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .fields__textarea {
     margin-top: 0;
   }
@@ -300,7 +316,7 @@
   .fields__inner {
     display: flex;
     justify-content: space-between;
-    margin-top: 0;
+    margin: 0;
   }
 
   .fields__inner .fields__block {
@@ -313,11 +329,15 @@
     margin-bottom: 70px;
   }
 
+  .fields__button-block {
+    margin: 0;
+  }
+
   .fields__button {
     width: 48%;
   }
 
   .fields__note {
-    width: 50%;
+    width: 48%;
   }
 }

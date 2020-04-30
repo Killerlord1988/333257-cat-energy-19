@@ -4,7 +4,6 @@ var menu = document.querySelector(".main-nav__items");
 var close = document.querySelector(".main-nav__toggle");
 
 headerMenu.classList.remove("no-js");
-console.log(btn);
 
 close.addEventListener("click", function (evt) {
   evt.preventDefault();
