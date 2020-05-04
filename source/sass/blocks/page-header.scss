@@ -13,11 +13,6 @@
   padding-bottom: 15px;
 }
 
-.page-header__logo {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .page-header__logo-img {
   display: block;
   width: 191px;
@@ -119,7 +114,7 @@
   .site-list__item {
     position: relative;
     padding: 0;
-    margin-left: 37px;
+    margin-left: 36px;
     border: none;
     list-style: none;
   }
@@ -151,6 +146,7 @@
 
   .page-header {
     margin-top: 40px;
+    margin-bottom: 55px;
   }
 
   .site-list__link {
@@ -169,6 +165,6 @@
   }
 
   .site-list__item--active::after {
-    top: 30px;
+    top: 35px;
   }
 }

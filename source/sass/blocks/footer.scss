@@ -15,7 +15,7 @@
 
 .footer__welcome {
   margin: 0;
-  width: 150px;
+  width: 140px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -34,14 +34,17 @@
 }
 
 .footer__container-map {
+  position: relative;
   width: 100%;
+  max-width: 320px;
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 0;
-  background-position: center;
+  background-position: 100% -44px;
   background-color: $grey-bg;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .footer__container-map::before {
@@ -49,13 +52,16 @@
   content: "";
   position: absolute;
 
-  width: 100%;
-  min-height: 400px;
+  left: 40%;
+  top: 36%;
 
-  background-size: 55px auto;
+  width: 55px;
+  height: 53px;
+
+
   background-image: url("../img/map-pin.png");
   background-repeat: no-repeat;
-  background-position: 50% 47%;
+  background-size: cover;
 }
 
 .footer__map {
@@ -64,14 +70,14 @@
 }
 
 .footer__container-bottom {
-  padding-top: 25px;
+
   padding-bottom: 22px;
   background-color: $grey-bg;
 }
 
 @media (min-width: $tablet-width) {
   .footer__card {
-    padding: 70px 40px;
+    padding: 64px 40px;
   }
 
   .footer__welcome {
@@ -98,10 +104,21 @@
 
   .footer__container-map {
     background-image: url("../img/bg-map-tablet@1x.png");
+    background-position: 100% -7px;
+    max-width: 768px;
+    min-height: 400px;
   }
 
   .footer__container-map::before {
-    background-size: 113px auto;
+    left: 42%;
+    top: 36%;
+
+    width: 113px;
+    height: 106px;
+  }
+
+  .footer__container-bottom {
+    padding-top: 25px;
   }
 }
 
@@ -113,16 +130,32 @@
   .footer__card {
     position: absolute;
     background-color: #ffffff;
-    padding: 65px 75px;
+    padding: 65px 77px;
+    padding-right: 85px;
     width: 570px;
     top: 90px;
+    z-index: 10;
+  }
+
+  .footer__adress {
+    text-align: left;
   }
 
   .footer__container-map {
     background-image: url("../img/bg-map-desktop@1x.png");
+    background-position: 100% -7px;
+    max-width: 1440px;
   }
 
   .footer__container-map::before {
-    background-position: 77.5% 45%;
+    left: 69%;
+    top: 38%;
+
+    width: 113px;
+    height: 106px;
+  }
+
+  .footer__container-bottom {
+    padding-top: 30px;
   }
 }

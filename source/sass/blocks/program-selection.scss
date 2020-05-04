@@ -6,7 +6,7 @@
 .program-selection__item {
   position: relative;
 
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   padding-top: 29px;
   padding-right: 19px;
   padding-bottom: 20px;
@@ -56,7 +56,7 @@
   width: 25px;
   height: 12px;
 
-  margin-left: 25px;
+  margin-left: 12px;
 
   background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
@@ -128,7 +128,7 @@
     margin-bottom: 29px;
     padding-top: 72px;
     padding-right: 47px;
-    padding-bottom: 60px;
+    padding-bottom: 64px;
     padding-left: 50px;
   }
 
@@ -161,6 +161,10 @@
     font-size: 20px;
     line-height: 20px;
     text-transform: uppercase;
+  }
+
+  .program-selection__arrow {
+    margin-left: 22px;
   }
 
   .program-selection__item--slim::before {
@@ -203,26 +207,26 @@
   .program-selection {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 60px;
+    margin-bottom: 72px;
   }
 
   .program-selection__item {
     width: 47%;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 80px;
-    padding-bottom: 62px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 75px;
+    padding-bottom: 63px;
     margin: 0;
   }
 
   .program-selection__title {
-    text-align: center;
-    padding-left: 70px;
-    margin-bottom: 80px;
+    margin-left: 160px;
+    margin-bottom: 73px;
   }
 
   .program-selection__desc {
     width: 100%;
+    padding-bottom: 28px;
   }
 
   .program-selection__item::after {
