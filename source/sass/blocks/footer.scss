@@ -76,6 +76,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .footer {
+    background-color: $grey-bg;
+  }
+
   .footer__card {
     padding: 64px 40px;
   }
@@ -144,15 +148,20 @@
   .footer__container-map {
     background-image: url("../img/bg-map-desktop@1x.png");
     background-position: 100% -7px;
+    background-size: cover;
+    width: 100%;
     max-width: 1440px;
   }
 
   .footer__container-map::before {
-    left: 69%;
-    top: 38%;
+    left: 0;
+    top: 0;
 
-    width: 113px;
-    height: 106px;
+    background-size: 125px auto;
+    background-position: 76% 51%;
+
+    width: 100%;
+    height: 400px;
   }
 
   .footer__container-bottom {

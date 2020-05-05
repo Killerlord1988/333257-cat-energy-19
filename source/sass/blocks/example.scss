@@ -232,11 +232,10 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    background-color: transparent;
+    background: linear-gradient(to bottom, transparent 595px, #eaeaea 595px);
   }
 
   .example__container {
-    background-color: white;
     padding-bottom: 0;
   }
 
@@ -340,7 +339,6 @@
     padding: 0;
     margin-top: 0;
     min-height: 642px;
-    background: linear-gradient(to bottom, transparent 180px, #eaeaea 180px);
   }
 
   .example__slider-img {
