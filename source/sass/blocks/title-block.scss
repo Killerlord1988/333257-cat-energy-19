@@ -20,13 +20,18 @@
 }
 
 @media (min-width: $tablet-width) {
+  .title-block {
+    padding-bottom: 57px;
+  }
+
   .title-block__title {
     font-size: 60px;
+    margin-top: 30px;
     margin-bottom: 53px;
   }
 
   .title-block__text {
-    width: 55%;
+    width: 50%;
     font-size: 20px;
     line-height: 30px;
     margin-left: 40px;
@@ -34,6 +39,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .title-block__title {
+    margin-top: -5px;
+  }
+
   .title-block__text {
     width: 330px;
     margin-left: 0;

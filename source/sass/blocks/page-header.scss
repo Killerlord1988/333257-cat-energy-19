@@ -3,6 +3,7 @@
   min-width: 320px;
   margin-right: auto;
   margin-left: auto;
+  border-bottom: 1px solid $grey-bg;
 }
 
 .page-header__wrapper {
@@ -83,6 +84,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .page-header__logo-img {
     display: block;
     width: 174px;
@@ -95,12 +103,6 @@
 
   .main-nav__toggle {
     display: none;
-  }
-
-  .page-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 
   .main-nav__list {

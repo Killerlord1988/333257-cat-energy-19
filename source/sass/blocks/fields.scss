@@ -24,10 +24,11 @@
     margin-right: -20px;
 
     border: 1px solid #ededed;
+    margin-bottom: 8px;
   }
 
   &--contacts {
-    padding-top: 7px;
+    padding-top: 0px;
 
     .fields__textfield {
       margin-left: 10px;
@@ -47,6 +48,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
 
@@ -57,7 +59,6 @@
     height: 3px;
     position: absolute;
     top: 34px;
-    right: -20px;
     background-color: $green-bg;
   }
 }
@@ -98,7 +99,7 @@
   font-family: inherit;
   font-size: 16px;
   text-transform: uppercase;
-  padding: 12px 15px;
+  padding: 12px 13px;
   border: 1px solid $header-border;
   outline: none;
 
@@ -180,9 +181,18 @@
 }
 
 @media (min-width: $tablet-width) {
+  .fields {
+    padding-bottom: 83px;
+  }
+
+  .fields__wrapper-personal-program {
+    margin-bottom: 48px;
+  }
+
   .fields__set--personal {
     margin-left: 40px;
     margin-right: 40px;
+    margin-bottom: 45px;
   }
 
   .fields__label {
@@ -199,12 +209,21 @@
   .fields__set--program {
     margin-left: 40px;
     margin-right: 40px;
-    padding: 25px 30px;
+    padding: 7px 27px;
+    margin-bottom: 58px;
+  }
+
+  .fields__set--contacts {
+    margin-bottom: 40px;
+  }
+
+  .fields__set--descr {
+    margin-bottom: 40px;
   }
 
   .fields__head {
-    margin-left: -30px;
-    margin-right: -30px;
+    padding-left: 0;
+    padding-right: 0;
 
     &::before {
       width: 100%;
@@ -225,16 +244,23 @@
 
   .fields__block {
     margin-bottom: 20px;
+    width: 100%;
   }
 
   .fields__textfield {
     padding-right: 40px;
   }
 
-  // .fields__textarea {
-  // }
+  .fields__textarea {
+    margin-top: 56px;
+    width: 89%;
+    height: 174px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 
   .fields__inner {
+    margin-top: 56px;
     margin-left: 40px;
     margin-right: 40px;
   }
@@ -249,6 +275,10 @@
       top: 16px;
       right: 17px;
     }
+  }
+
+  .fields__set--add {
+    margin-bottom: 13px;
   }
 
   .fields__button-block {
@@ -275,6 +305,7 @@
 
     width: 50%;
     text-align: left;
+    margin-right: -30px;
   }
 }
 
@@ -282,46 +313,47 @@
   .fields__wrapper-personal-program {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
   }
 
   .fields__set--personal {
     margin: 0;
     padding: 0;
-    width: 48%;
+    width: 47%;
   }
 
   .fields__set--program {
     margin: 0;
-    width: 48%;
+    width: 47%;
 
-    padding-top: 20px;
+    padding-top: 5px;
+    padding-left: 30px;
     padding-bottom: 20px;
-  }
-
-  .fields__head {
-    margin-bottom: 70px;
   }
 
   .fields__title {
     margin: 0;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin-left: 70px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .fields__textarea {
-    margin-top: 0;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .fields__inner {
     display: flex;
     justify-content: space-between;
     margin: 0;
+    margin-top: 53px;
   }
 
   .fields__inner .fields__block {
     margin: 0;
-    width: 48%;
+    width: 47%;
   }
 
   .fields__set--add {
@@ -334,10 +366,10 @@
   }
 
   .fields__button {
-    width: 48%;
+    width: 47%;
   }
 
   .fields__note {
-    width: 48%;
+    width: 49%;
   }
 }
