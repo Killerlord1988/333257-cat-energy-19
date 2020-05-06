@@ -172,8 +172,8 @@
     left: 67.1%;
 
 
-    width: 195px;
-    height: 195px;
+    width: 141px;
+    height: 194px;
   }
 
   .program-selection__item--slim::after {
@@ -190,7 +190,7 @@
     left: 58.2%;
 
     width: 268px;
-    height: 268px;
+    height: 113px;
   }
 
   .program-selection__item--pro::after {
@@ -239,12 +239,15 @@
 
   .program-selection__item--slim::before {
     width: 71px;
+    height: 97px;
+
     top: 40px;
     left: 65px;
   }
 
   .program-selection__item--pro::before {
     width: 134px;
+    height: 57px;
     top: 70px;
     left: 32px;
   }
