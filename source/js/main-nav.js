@@ -1,10 +1,9 @@
-var headerMenu = document.querySelector(".page-header")
+var headerMenu = document.querySelector(".page-header");
 var btn = document.querySelector(".main-nav");
 var menu = document.querySelector(".main-nav__items");
 var close = document.querySelector(".main-nav__toggle");
 
 headerMenu.classList.remove("no-js");
-console.log(btn);
 
 close.addEventListener("click", function (evt) {
   evt.preventDefault();

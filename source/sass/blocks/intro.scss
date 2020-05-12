@@ -14,7 +14,7 @@
 
 .intro {
   position: relative;
-  margin-bottom: 7.1%;
+  margin-bottom: 24px;
 }
 
 .intro__img-food {
@@ -23,6 +23,7 @@
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 4px;
 }
 
 .intro__title {
@@ -60,12 +61,12 @@
   }
 
   .intro__block {
-    padding-left: 90px;
+    padding-left: 88px;
     position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 1000px;
+    min-height: 855px;
   }
 
   .intro__desk-green::before {
@@ -81,7 +82,7 @@
   .intro__title {
 
     margin-top: 42px;
-    margin-bottom: 33px;
+    margin-bottom: 24px;
     padding: 0;
     font-size: 60px;
     line-height: 60px;
@@ -100,9 +101,9 @@
 
   .intro__img-food {
     position: absolute;
-    left: -90px;
-    top: 250px;
-    max-width: none;
+    right: 0;
+    top: 245px;
+    max-width: 709px;
     margin: 0;
     z-index: -1;
   }
@@ -122,13 +123,14 @@
   }
 
   .intro__block {
-    min-height: 570px;
+    min-height: 515px;
+    padding-left: 80px;
   }
 
   .intro__desk-green::before {
     content: "";
     position: absolute;
-    top: -126px;
+    top: -182px;
     right: 0;
     z-index: -1;
     width: 50%;
@@ -141,7 +143,7 @@
 
   .intro__img-food {
     position: absolute;
-    left: 425px;
+    left: 450px;
     top: -40px;
 
     width: 552px;

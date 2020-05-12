@@ -14,8 +14,8 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   transition: opasity ease-in-out 0.3s;
-  margin-top: 40px;
-  margin-bottom: 29px;
+  margin-top: 28px;
+  margin-bottom: 26px;
 }
 
 .social__logo-footer:hover {
@@ -36,6 +36,7 @@
   align-self: center;
   width: 100%;
   margin-top: 6px;
+  margin-bottom: 20px;
   padding: 0;
   padding-top: 20px;
   padding-bottom: 16px;
@@ -101,8 +102,9 @@
 }
 
 .social__academy-logo--svg {
-  width: 27px;
-  height: 34px;
+  width: 42px;
+  height: 42px;
+  margin-right: -8px;
 }
 
 .social__link-academy:hover .social__academy-logo--svg {
@@ -133,10 +135,11 @@
   .social__items {
     width: 50%;
     border: none;
+    margin-bottom: 20px;
   }
 
   .social__item {
-    margin-right: 30px;
+    margin-right: 20px;
   }
 
   .social__link {
@@ -164,7 +167,7 @@
   }
 
   .social__academy-logo--svg {
-    width: 27px;
-    height: 34px;
+    width: 40px;
+    height: 40px;
   }
 }
