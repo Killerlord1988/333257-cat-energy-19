@@ -29,10 +29,6 @@
 
   &--contacts {
     padding-top: 0;
-
-    .fields__textfield {
-      margin-left: 10px;
-    }
   }
 
   &--descr {
@@ -48,7 +44,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  padding-left: 20px;
+  margin-left: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
 
@@ -172,6 +168,7 @@
 .fields__button {
   width: 100%;
   margin-bottom: 20px;
+  font-size: 16px;
 }
 
 .fields__note {
@@ -182,7 +179,7 @@
 
 @media (min-width: $tablet-width) {
   .fields {
-    padding-bottom: 83px;
+    padding-bottom: 76px;
   }
 
   .fields__wrapper-personal-program {
@@ -214,14 +211,15 @@
   }
 
   .fields__set--contacts {
-    margin-bottom: 40px;
+    margin-bottom: 33px;
   }
 
   .fields__set--descr {
-    margin-bottom: 40px;
+    margin-bottom: 37px;
   }
 
   .fields__head {
+    margin-left: 0;
     padding-left: 0;
     padding-right: 0;
 
@@ -249,6 +247,7 @@
 
   .fields__textfield {
     padding-right: 40px;
+    margin-left: 17px;
   }
 
   .fields__textarea {
@@ -275,6 +274,10 @@
       top: 16px;
       right: 17px;
     }
+  }
+
+  .fields__textfield--email {
+    margin-left: 20px;
   }
 
   .fields__set--add {
@@ -310,6 +313,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .fields {
+    padding-bottom: 87px;
+  }
+
   .fields__wrapper-personal-program {
     display: flex;
     justify-content: space-between;
@@ -329,6 +336,10 @@
     padding-top: 5px;
     padding-left: 30px;
     padding-bottom: 20px;
+  }
+
+  .fields__set--contacts {
+    margin-bottom: 40px;
   }
 
   .fields__title {

@@ -40,7 +40,7 @@
   padding: 0;
   margin: 0;
 
-  margin-bottom: 42px;
+  margin-bottom: 37px;
 
   &:first-child {
     border-top: 1px solid $grey-bg;
@@ -50,7 +50,7 @@
 .sec-goods__item {
   list-style: none;
   margin-top: 12px;
-  padding-bottom: 17px;
+  padding-bottom: 18px;
 
   border-bottom: 1px solid $grey-bg;
 }
@@ -103,7 +103,7 @@
   }
 
   .sec-goods__list {
-    margin-bottom: 65px;
+    margin-bottom: 67px;
   }
 
   .sec-goods__greenline-catalog::before {
@@ -124,7 +124,10 @@
     justify-content: space-between;
     width: 100%;
     margin: 0;
-    padding: 27px 37px;
+    padding-top: 27px;
+    padding-bottom: 26px;
+    padding-left: 37px;
+    padding-right: 37px;
     border: 1px solid #cdcdcd;
     border-bottom: none;
 
@@ -182,7 +185,7 @@
     padding-top: 15px;
     margin-left: 70px;
     margin-right: 70px;
-    margin-bottom: 45px;
+    margin-bottom: 50px;
     padding-left: 40px;
     padding-right: 40px;
     font-size: 36px;
@@ -217,22 +220,23 @@
   }
 
   .sec-goods__title {
-    width: 245px;
+    width: 290px;
     margin: 0;
   }
 
   .sec-goods__table {
-    width: 250px;
+    min-width: 290px;
     margin: 0;
   }
 
   .sec-goods__amount {
-    width: 150px;
+    min-width: 150px;
     text-align: left;
   }
 
   .sec-goods__price {
     text-align: right;
+    padding-left: 50px;
   }
 
   .sec-goods__button {
