@@ -10,9 +10,9 @@
   background-size: cover;
   background-color: $green-bg;
 
-  // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  //   background-image: url("../img/gift-photo-mobile@2x.jpg");
-  // }
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
 }
 
 .bonus__block {
@@ -52,6 +52,10 @@
   .bonus__image {
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     background-position: 50% 65%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
   }
 
   .bonus__block {
@@ -80,6 +84,10 @@
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     height: 100%;
     background-position: 50% 50%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
   }
 
   .bonus__block {

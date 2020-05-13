@@ -134,9 +134,10 @@
   opacity: 0;
   transition: opacity ease-in 0.3s;
 
-  // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  //   background-image: url("../img/before-mobile@2x.png");
-  // }
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/before-mobile@2x.png");
+    background-size: 320px;
+  }
 }
 
 .example__slider-img--after {
@@ -150,10 +151,10 @@
   opacity: 0;
   transition: opacity ease-in 0.3s;
 
-  // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  //   background-image: url("../img/after-mobile@2x.png");
-  //   background-size: 320px;
-  // }
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/after-mobile@2x.png");
+    background-size: 320px;
+  }
 }
 
 .example__slider-input {
@@ -357,9 +358,9 @@
     transition: opacity ease-in 0.3s;
     background-size: contain;
 
-    // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    //   background-image: url("../img/before-tablet@2x.png");
-    // }
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/before-tablet@2x.png");
+    }
   }
 
   .example__slider-img--after {
@@ -375,9 +376,9 @@
 
     background-size: contain;
 
-    // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    //   background-image: url("../img/after-tablet@2x.png");
-    // }
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/after-tablet@2x.png");
+    }
   }
 
   .example__slider-input--before:checked ~ .example__slider-img--before {
