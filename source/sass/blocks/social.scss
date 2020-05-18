@@ -61,18 +61,13 @@
   fill: #666666;
 }
 
-.social__item:hover {
+.social__svg:hover {
   transition: fill ease-in-out 0.3s;
   fill: $green-bg;
 }
 
-.social__item:active {
-  opacity: 0.6;
-  transition: opasity ease-in-out 0.3s;
-}
-
-.social__item:active .social__svg {
-  fill: $green-bg;
+.social__svg:active {
+  opacity: 0.3;
 }
 
 .social__link {
@@ -105,18 +100,15 @@
   width: 42px;
   height: 42px;
   margin-right: -8px;
+  fill: #666666;
 }
 
 .social__link-academy:hover .social__academy-logo--svg {
   fill: $green-bg;
 }
 
-.social__link-academy:hover .social__academy-text {
-  color: $green-bg;
-}
-
 .social__link-academy:active {
-  opacity: 0.6;
+  opacity: 0.3;
   transition: opasity ease-in-out 0.3s;
 }
 
