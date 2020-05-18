@@ -66,7 +66,8 @@ a:focus {
 .food__button:hover,
 .form__button:hover,
 .sec-goods__button:hover,
-.intro__link:hover {
+.intro__link:hover,
+.fields__button:hover {
   background-color: #5eaa2f;
   transition: background-color ease-in-out 0.3s;
 }
@@ -79,7 +80,8 @@ a:focus {
 .food__button:active,
 .form__button:active,
 .sec-goods__button:active,
-.intro__link:active {
+.intro__link:active,
+.fields__button:active {
   color: rgba(#ffffff, 0.3);
 }
 

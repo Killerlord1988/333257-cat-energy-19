@@ -35,7 +35,7 @@
     display: block;
     width: 30px;
     height: 30px;
-    border: 1px solid #ededed;
+    border: 1px solid #cdcdcd;
     border-radius: 50%;
   }
 
@@ -54,7 +54,7 @@
   &:hover,
   &:focus {
     &::before {
-      border-color: #bcbcbc;
+      border-color: #bababa;
     }
   }
 
