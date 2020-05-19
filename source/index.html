@@ -4,12 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
 <body>
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <!--header-->
   <header class="page-header container no-js">
     <div class="page-header__wrapper">
@@ -210,7 +212,7 @@
             <li class="social__item social__item--vk">
               <a class="social__link" href="#" target="_blank">
                 <svg class="social__svg social__svg--vk" width="22" height="12">
-                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                  <use xlink:href="#icon-vk"></use>
                 </svg>
                 <span class="visually-hidden">ВКонтакте</span>
               </a>
@@ -218,7 +220,7 @@
             <li class="social__item social__item--inst">
               <a class="social__link" href="#" target="_blank">
                 <svg class="social__svg social__svg--inst" width="17" height="17">
-                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                  <use xlink:href="#icon-insta"></use>
                 </svg>
                 <span class="visually-hidden">Инстаграм</span>
               </a>
@@ -226,7 +228,7 @@
             <li class="social__item social__item--fb">
               <a class="social__link" href="#" target="_blank">
                 <svg class="social__svg social__svg--fb" width="10" height="19">
-                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                  <use xlink:href="#icon-fb"></use>
                 </svg>
                 <span class="visually-hidden">Фейсбук</span>
               </a>
@@ -238,7 +240,7 @@
             </a>
             <a class="social__academy-logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
               <svg class="social__academy-logo--svg" width="27px" height="34px">
-                <use xlink:href="img/sprite.svg#htmlacademy"></use>
+                <use xlink:href="#icon-htmlacademy"></use>
               </svg>
             </a>
           </div>
