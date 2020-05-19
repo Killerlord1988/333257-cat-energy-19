@@ -94,6 +94,7 @@
 .fields__textarea {
   font-family: inherit;
   font-size: 16px;
+  line-height: 18px;
   text-transform: uppercase;
   padding: 12px 13px;
   border: 1px solid $header-border;
@@ -198,14 +199,15 @@
   .fields__textfield,
   .fields__textarea {
     font-size: 20px;
-    padding: 14px 20px;
+    line-height: 20px;
+    padding: 10px 20px;
   }
 
   .fields__set--program {
     margin-left: 40px;
     margin-right: 40px;
     padding: 7px 27px;
-    margin-bottom: 58px;
+    margin-bottom: 62px;
   }
 
   .fields__set--contacts {
@@ -318,7 +320,7 @@
   .fields__wrapper-personal-program {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 45px;
+    margin-bottom: 51px;
   }
 
   .fields__set--personal {
