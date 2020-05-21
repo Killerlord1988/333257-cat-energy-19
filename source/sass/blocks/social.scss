@@ -86,6 +86,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  cursor: pointer;
 }
 
 .social__academy-text {
@@ -94,6 +95,11 @@
   font-size: 16px;
   font-family: $second-font;
   color: #666666;
+  pointer-events: none;
+}
+
+.social__academy-logo {
+  pointer-events: none;
 }
 
 .social__academy-logo--svg {
