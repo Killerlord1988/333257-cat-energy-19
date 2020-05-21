@@ -52,6 +52,14 @@
   margin-right: 0;
 }
 
+.food__catalog-link {
+  display: block;
+}
+
+.food__catalog-link .food__title:focus {
+  outline: $focus-outline;
+}
+
 .food__title {
   width: 54%;
   margin-top: 22px;
@@ -220,8 +228,7 @@
 
   .food__catalog-item {
     position: relative;
-    width: 45%;
-    min-width: 324px;
+    width: 324px;
     flex-direction: column;
     align-items: center;
     min-height: 431px;
@@ -236,6 +243,7 @@
   .food__img-block {
     position: absolute;
     width: 324px;
+    left: 0;
     bottom: 300px;
   }
 
@@ -389,7 +397,6 @@
   .food__img-block {
     position: absolute;
     width: 245px;
-    left: 0;
     bottom: 300px;
   }
 }

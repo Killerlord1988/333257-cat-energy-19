@@ -58,7 +58,7 @@
 }
 
 .add-list__input:focus + .add-list__label {
-  outline: 1px solid aquamarine;
+  outline: $focus-outline;
 }
 
 @media (min-width: $tablet-width) {

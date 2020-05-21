@@ -22,6 +22,14 @@
   box-sizing: border-box;
 }
 
+a:focus,
+input:focus,
+button:focus,
+textarea:focus,
+label:focus {
+  outline: $focus-outline;
+}
+
 body {
   margin: 0;
   font-weight: 400;
@@ -41,11 +49,6 @@ a {
   font-family: $main-font;
   color: $font-color;
   text-decoration: none;
-}
-
-a:active,
-a:focus {
-  outline: none;
 }
 
 .button {

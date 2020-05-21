@@ -171,7 +171,10 @@
 }
 
 .example__slider-input {
-  display: none;
+  padding: 0;
+  position: absolute;
+  opacity: 0;
+  bottom: 0;
 }
 
 .example__slider-input--before:checked ~ .example__slider-img--before {
@@ -239,6 +242,15 @@
 .example__slider-input--after:checked ~ .example__toggle-control .example__toggle-scale::before {
   right: 6px;
 }
+
+.example__slider-input--before:focus ~ .example__toggle-control > .example__toggle-label--before,
+.example__slider-input--after:focus ~ .example__toggle-control > .example__toggle-label--after {
+  outline: $focus-outline;
+}
+
+// .example__slider-input:focus ~ .example__toggle-control > .example__toggle-label {
+//   outline: $focus-outline;
+// }
 
 .example__price-desktop {
   display: none;
