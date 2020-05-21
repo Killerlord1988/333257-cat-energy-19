@@ -86,6 +86,6 @@ a:focus {
 }
 
 .food__button-more:active {
-  color: rgba($color: #444444, $alpha: 0.3);
+  color: rgba($color: $second-font-color, $alpha: 0.3);
   transition: color ease-in-out 0.3s;
 }
