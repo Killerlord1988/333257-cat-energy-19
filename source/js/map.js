@@ -29,4 +29,3 @@ function initMap() {
     icon: image
   });
 }
-
