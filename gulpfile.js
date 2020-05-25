@@ -21,8 +21,6 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var htmlmin = require("gulp-htmlmin");
-var ghpages = require('gh-pages');
-
 
 gulp.task("clean", function () {
   return del("build");
@@ -136,4 +134,3 @@ gulp.task("build", gulp.series(
   "html"
   ));
 gulp.task("start", gulp.series("build", "server"));
-ghpages.publish("build");
