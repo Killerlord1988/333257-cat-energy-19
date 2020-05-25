@@ -45,9 +45,6 @@ img {
 }
 
 a {
-  font-weight: 400;
-  font-family: $main-font;
-  color: $font-color;
   text-decoration: none;
 }
 
@@ -66,29 +63,24 @@ a {
   border: none;
 }
 
-.food__button:hover,
-.form__button:hover,
-.sec-goods__button:hover,
-.intro__link:hover,
-.fields__button:hover {
+.button:hover {
   background-color: #5eaa2f;
   transition: background-color ease-in-out 0.3s;
 }
 
-.food__button-more:hover {
-  background-color: #ebebeb;
-  transition: background-color ease-in-out 0.3s;
-}
-
-.food__button:active,
-.form__button:active,
-.sec-goods__button:active,
-.intro__link:active,
-.fields__button:active {
+.button:active {
   color: rgba(#ffffff, 0.3);
 }
 
-.food__button-more:active {
-  color: rgba($color: $second-font-color, $alpha: 0.3);
-  transition: color ease-in-out 0.3s;
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+input:disabled,
+textarea:disabled,
+label:disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
 }

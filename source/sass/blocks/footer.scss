@@ -159,8 +159,8 @@
     position: absolute;
     top: 90px;
     left: 109px;
-    width: 570px;
-    padding: 65px 77px;
+    width: 564px;
+    padding: 70px 77px;
     min-width: auto;
   }
 
@@ -174,7 +174,6 @@
     background-position: 100% -7px;
     background-size: cover;
     width: 100%;
-    max-width: 1440px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-desktop@2x.jpg");

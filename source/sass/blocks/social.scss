@@ -1,4 +1,4 @@
-.social__block {
+.footer__social {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,7 +31,6 @@
 .social__items {
   display: flex;
   flex-wrap: wrap;
-
   justify-content: center;
   align-self: center;
   width: 100%;
@@ -50,7 +49,7 @@
   flex-wrap: wrap;
   align-items: center;
   list-style: none;
-  margin-right: 36px;
+  margin-right: 32px;
 
   &:last-child {
     margin-right: 0;
@@ -61,12 +60,12 @@
   fill: #666666;
 }
 
-.social__svg:hover {
+.social__item:hover .social__svg {
   transition: fill ease-in-out 0.3s;
   fill: $green-bg;
 }
 
-.social__svg:active {
+.social__item:active .social__svg {
   opacity: 0.3;
 }
 
@@ -76,7 +75,6 @@
   align-items: center;
   width: 23px;
   height: 23px;
-
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -102,14 +100,14 @@
   pointer-events: none;
 }
 
-.social__academy-logo--svg {
+.social__academy-logo-svg {
   width: 42px;
   height: 42px;
   margin-right: -8px;
   fill: #666666;
 }
 
-.social__link-academy:hover .social__academy-logo--svg {
+.social__link-academy:hover .social__academy-logo-svg {
   fill: $green-bg;
 }
 
@@ -119,21 +117,22 @@
 }
 
 @media (min-width: $tablet-width) {
-  .social__block {
+  .footer__social {
     flex-direction: row;
     justify-content: space-between;
   }
 
   .social__logo-footer {
     margin: 0;
-    width: 160px;
+    width: 156px;
     height: 24px;
   }
 
   .social__items {
     width: 50%;
     border: none;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
   }
 
   .social__item {
@@ -164,7 +163,7 @@
     width: 160px;
   }
 
-  .social__academy-logo--svg {
+  .social__academy-logo-svg {
     width: 40px;
     height: 40px;
   }

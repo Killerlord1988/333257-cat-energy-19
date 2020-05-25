@@ -37,10 +37,10 @@
 
 .example__item-stats {
   display: flex;
+  position: relative;
 }
 
 .example__stats-value {
-  position: relative;
 
   align-items: stretch;
 
@@ -61,39 +61,17 @@
   border-radius: 2px;
 }
 
-.example__stats-value--kg::after {
-  content: "снижение веса";
+.example__stats-about {
 
   position: absolute;
-  bottom: -16px;
+  bottom: -6px;
   left: 50%;
   transform: translateX(-50%);
   align-items: stretch;
   padding-top: 0;
-  padding-right: 10px;
+  padding-right: 15px;
   padding-bottom: 0;
-  padding-left: 10px;
-  font-size: 12px;
-  line-height: 12px;
-  font-family: $second-font;
-  text-align: center;
-  text-transform: lowercase;
-
-  background-color: $grey-bg;
-}
-
-.example__stats-value--date::after {
-  content: "затрачено времени";
-
-  position: absolute;
-  bottom: -16px;
-  left: 50%;
-  transform: translateX(-50%);
-  align-items: stretch;
-  padding-top: 0;
-  padding-right: 10px;
-  padding-bottom: 0;
-  padding-left: 10px;
+  padding-left: 15px;
   font-size: 12px;
   line-height: 12px;
   font-family: $second-font;
@@ -130,7 +108,7 @@
   background-position: 50% 50%;
 }
 
-.slider-img {
+.example__slider-picture {
   max-width: 320px;
   width: 100%;
   display: block;
@@ -223,7 +201,7 @@
   transition: left ease-in 0.3s;
 }
 
-.example__toggle-scale::before {
+.example__toggle-point {
   content: "";
   position: absolute;
   top: 3px;
@@ -235,16 +213,21 @@
   transition: left ease-in 0.3s;
 }
 
-.example__slider-input--before:checked ~ .example__toggle-control .example__toggle-scale::before {
+.example__slider-input--before:checked ~ .example__toggle-control .example__toggle-point {
   left: 6px;
 }
 
-.example__slider-input--after:checked ~ .example__toggle-control .example__toggle-scale::before {
+.example__slider-input--after:checked ~ .example__toggle-control .example__toggle-point {
   right: 6px;
 }
 
 .example__slider-input--before:focus ~ .example__toggle-control > .example__toggle-label--before,
 .example__slider-input--after:focus ~ .example__toggle-control > .example__toggle-label--after {
+  outline: $focus-outline;
+}
+
+.example__slider-input--before:focus ~ .example__toggle-control > .example__toggle > .example__toggle-point,
+.example__slider-input--after:focus ~ .example__toggle-control > .example__toggle > .example__toggle-point {
   outline: $focus-outline;
 }
 
@@ -291,7 +274,6 @@
   }
 
   .example__stats-value {
-    position: relative;
 
     margin: 0;
     margin-right: 42px;
@@ -310,14 +292,11 @@
     border-radius: 5px;
   }
 
-  .example__stats-value--kg::after,
-  .example__stats-value--date::after {
+  .example__stats-about {
     position: absolute;
-    bottom: -5px;
-    left: 50%;
+    bottom: -18px;
 
-    transform: translateX(-50%);
-
+    left: 39%;
     align-items: stretch;
     padding-top: 0;
     padding-right: 8px;
@@ -332,11 +311,11 @@
     background-color: #ffffff;
   }
 
-  .example__stats-value--kg::after {
+  .example__stats-about--kg {
     width: 114px;
   }
 
-  .example__stats-value--date::after {
+  .example__stats-about--date {
     width: 144px;
   }
 
@@ -374,7 +353,7 @@
     margin: 0;
   }
 
-  .slider-img {
+  .example__slider-picture {
     max-width: 680px;
   }
 
@@ -468,7 +447,7 @@
     border-radius: 10px;
   }
 
-  .example__toggle-scale::before {
+  .example__toggle-point {
     content: "";
     position: absolute;
     width: 32px;
@@ -482,19 +461,25 @@
     cursor: pointer;
   }
 
-  .example__slider-input--before:checked ~ .example__toggle-control .example__toggle-scale::before {
+  .example__slider-input--before:checked ~ .example__toggle-control .example__toggle-point {
     left: 6px;
   }
 
-  .example__slider-input--after:checked ~ .example__toggle-control .example__toggle-scale::before {
+  .example__slider-input--after:checked ~ .example__toggle-control .example__toggle-point {
     right: 6px;
   }
 
-  .example__toggle-control:hover .example__toggle-scale::before {
+  .example__toggle-control:hover .example__toggle-point {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
   }
 
-  .example__toggle-control:active .example__toggle-scale::before {
+  .example__toggle-control:active .example__toggle-point {
+    box-shadow: 0 0 2px 2px $green-bg, 0 4px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .example__slider-input--before:focus ~ .example__toggle-control > .example__toggle > .example__toggle-point,
+  .example__slider-input--after:focus ~ .example__toggle-control > .example__toggle > .example__toggle-point {
+    outline: none;
     box-shadow: 0 0 2px 2px $green-bg, 0 4px 5px rgba(0, 0, 0, 0.3);
   }
 }
@@ -513,7 +498,7 @@
   .example__wrapper {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 6px;
+    padding-bottom: 0;
   }
 
   .example__item {
@@ -536,7 +521,7 @@
     width: 53%;
   }
 
-  .slider-img {
+  .example__slider-picture {
     max-width: 690px;
     margin-top: 38px;
   }
@@ -568,8 +553,7 @@
     margin-bottom: 66px;
   }
 
-  .example__stats-value--kg::after,
-  .example__stats-value--date::after {
+  .example__stats-about {
     background-color: #eaeaea;
   }
 

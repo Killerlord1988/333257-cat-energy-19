@@ -5,35 +5,29 @@
 
 .program-selection__item {
   position: relative;
-
   margin-bottom: 22px;
   padding-top: 29px;
   padding-right: 19px;
   padding-bottom: 20px;
   padding-left: 19px;
-
   background-color: $grey-bg;
 }
 
 .program-selection__title {
-
   margin-top: 0;
   margin-bottom: 12%;
   margin-left: 30%;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
-
   text-align: left;
   text-transform: uppercase;
 }
 
 .program-selection__desc {
-
   margin-bottom: 8%;
   padding-bottom: 9%;
   font-family: $second-font;
-
   border-bottom: 1px solid rgba(68, 68, 68, 0.1);
 }
 
@@ -55,9 +49,7 @@
 .program-selection__arrow {
   width: 25px;
   height: 12px;
-
   margin-left: 12px;
-
   background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
 }
@@ -76,27 +68,22 @@
   z-index: 1;
   width: 49px;
   height: 49px;
-
   background-image: url("../img/icon-cat-slim.svg");
   background-repeat: no-repeat;
 }
 
 .program-selection__item--slim::after {
-
   content: "";
   position: absolute;
   top: 24px;
   left: 22px;
-
   width: 50px;
   height: 50px;
   background-color: $green-bg;
-
   border-radius: 50%;
 }
 
 .program-selection__item--pro::before {
-
   content: "";
   position: absolute;
   top: 35px;
@@ -104,22 +91,18 @@
   z-index: 1;
   width: 67px;
   height: 52px;
-
   background-image: url("../img/icon-cat-pro.svg");
   background-repeat: no-repeat;
 }
 
 .program-selection__item--pro::after {
-
   content: "";
   position: absolute;
   top: 24px;
   left: 22px;
-
   width: 50px;
   height: 50px;
   background-color: $green-bg;
-
   border-radius: 50%;
 }
 
@@ -170,8 +153,6 @@
   .program-selection__item--slim::before {
     top: 78px;
     left: 67.1%;
-
-
     width: 141px;
     height: 194px;
   }
@@ -179,25 +160,20 @@
   .program-selection__item--slim::after {
     top: 90px;
     left: 63%;
-
     width: 200px;
     height: 200px;
   }
 
   .program-selection__item--pro::before {
-
     top: 135px;
     left: 58.2%;
-
     width: 268px;
     height: 113px;
   }
 
   .program-selection__item--pro::after {
-
     top: 91px;
     left: 63.1%;
-
     width: 200px;
     height: 200px;
   }
@@ -232,7 +208,6 @@
   .program-selection__item::after {
     top: 47px;
     left: 52px;
-
     width: 100px;
     height: 100px;
   }
@@ -240,7 +215,6 @@
   .program-selection__item--slim::before {
     width: 71px;
     height: 97px;
-
     top: 40px;
     left: 65px;
   }

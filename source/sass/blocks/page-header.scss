@@ -1,3 +1,15 @@
+@media (min-width: $mobile-width) and (max-width: 767px) {
+  .no-js {
+    .page-header__toggle {
+      display: none;
+    }
+
+    .main-nav__items {
+      display: block;
+    }
+  }
+}
+
 .page-header {
   position: relative;
   min-width: 320px;
@@ -28,7 +40,7 @@
   height: auto;
 }
 
-.main-nav__toggle {
+.page-header__toggle {
   width: 35px;
   height: 35px;
   padding: 0;
@@ -43,52 +55,8 @@
   transition: 0.3s;
 }
 
-.main-nav__toggle--close {
+.page-header__toggle--close {
   background-image: url("../img/icon-close.svg");
-}
-
-.main-nav__items {
-  display: none;
-  margin: 0;
-  padding: 0;
-}
-
-.main-nav__list {
-  display: none;
-  flex-direction: column;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-}
-
-.menu-open {
-  display: flex;
-  flex-direction: column;
-}
-
-.site-list__item {
-  list-style: none;
-
-  border-top: 1px solid $grey-bg;
-
-  &:hover:not(.site-list__item--active) {
-    opacity: 0.6;
-  }
-
-  &:active:not(.site-list__item--active) {
-    opacity: 0.3;
-  }
-}
-
-.site-list__link {
-  display: flex;
-  justify-content: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1;
-  text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
@@ -105,45 +73,8 @@
     height: auto;
   }
 
-  .main-nav {
-    flex-grow: 1;
-  }
-
-  .main-nav__toggle {
+  .page-header__toggle {
     display: none;
-  }
-
-  .main-nav__list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    padding-left: 0;
-  }
-
-  .site-list__item {
-    position: relative;
-    padding: 0;
-    margin-left: 36px;
-    border: none;
-    list-style: none;
-  }
-
-  .site-list__link {
-    padding: 0;
-    font-size: 18px;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
-
-  .site-list__item--active::after {
-    content: " ";
-    position: absolute;
-    top: 29px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: $green-bg;
   }
 }
 
@@ -157,24 +88,5 @@
   .page-header {
     margin-top: 40px;
     margin-bottom: 55px;
-  }
-
-  .site-list__link {
-    font-size: 20px;
-    line-height: 25px;
-  }
-
-  .site-list--index {
-    .site-list__link {
-      color: #ffffff;
-    }
-
-    .site-list__item--active::after {
-      background-color: #ffffff;
-    }
-  }
-
-  .site-list__item--active::after {
-    top: 35px;
   }
 }

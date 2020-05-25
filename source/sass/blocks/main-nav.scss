@@ -1,0 +1,27 @@
+.main-nav__items {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__list {
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    flex-grow: 1;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-left: 0;
+  }
+}

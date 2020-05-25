@@ -21,6 +21,8 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var htmlmin = require("gulp-htmlmin");
+var ghpages = require('gh-pages');
+
 
 gulp.task("clean", function () {
   return del("build");
@@ -45,6 +47,7 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
@@ -54,6 +57,7 @@ gulp.task("css", function () {
 
 gulp.task("script-min", function() {
   return gulp.src("source/js/**/*.js")
+  .pipe(gulp.dest("build/js"))
   .pipe(uglify())
   .pipe(rename({suffix: ".min"}))
   .pipe(gulp.dest("build/js"));
@@ -132,3 +136,4 @@ gulp.task("build", gulp.series(
   "html"
   ));
 gulp.task("start", gulp.series("build", "server"));
+ghpages.publish("build");
