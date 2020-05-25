@@ -139,6 +139,26 @@
   color: $second-font-color;
 }
 
+.fields__textfield::-webkit-input-placeholder,
+.fields__textarea::-webkit-input-placeholder {
+  color: $second-font-color;
+}
+
+.fields__textfield:-moz-placeholder,
+.fields__textarea:-moz-placeholder {
+  color: $second-font-color;
+}
+
+.fields__textfield::-moz-p,
+.fields__textarea::-moz-p {
+  color: $second-font-color;
+}
+
+.fields__textfield:-ms-input-placeholder,
+.fields__textarea:-ms-input-placeholder {
+  color: $second-font-color;
+}
+
 .fields__contact-icon {
   position: absolute;
 

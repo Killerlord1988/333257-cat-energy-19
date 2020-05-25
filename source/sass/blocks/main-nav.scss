@@ -1,3 +1,11 @@
+@media (min-width: $mobile-width) and (max-width: 767px) {
+  .no-js {
+    .main-nav__items {
+      display: block;
+    }
+  }
+}
+
 .main-nav__items {
   display: none;
   margin: 0;

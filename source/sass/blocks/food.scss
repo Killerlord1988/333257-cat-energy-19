@@ -356,12 +356,6 @@
   }
 }
 
-@media (min-width: 1030px) {
-  .food__catalog-item:nth-child(odd) {
-    margin-right: 200px;
-  }
-}
-
 @media (min-width: $desktop-width) {
   .food__header {
     padding-top: 8px;
@@ -372,10 +366,6 @@
   .food__see-more {
     width: 245px;
     min-width: auto;
-  }
-
-  .food__catalog-item:nth-child(odd) {
-    margin-right: 0;
   }
 
   .food__img-block {

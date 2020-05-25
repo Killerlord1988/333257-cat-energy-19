@@ -57,6 +57,7 @@
 .program-selection__link:hover .program-selection__arrow,
 .program-selection__link:focus .program-selection__arrow {
   background-image: url("../img/icon-right-arrow-verylong.svg");
+  background-size: 34px;
   width: 34px;
 }
 
@@ -203,6 +204,10 @@
   .program-selection__desc {
     width: 100%;
     padding-bottom: 28px;
+  }
+
+  .program-selection__link {
+    margin-left: 0;
   }
 
   .program-selection__item::after {
