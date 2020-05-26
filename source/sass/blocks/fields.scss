@@ -129,6 +129,13 @@
   }
 }
 
+input:disabled,
+textarea:disabled,
+label:disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
 .fields__textfield--email,
 .fields__textfield--phone {
   margin-left: 11px;
@@ -262,8 +269,8 @@
     max-width: none;
     font-size: 36px;
     line-height: 36px;
-    margin-left: -30px;
-    margin-right: -30px;
+    margin-left: 0;
+    margin-right: 0;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -420,7 +427,7 @@
 
   .fields__set--add {
     padding-bottom: 0;
-    margin-bottom: 67px;
+    margin-bottom: 51px;
   }
 
   .fields__button-block {

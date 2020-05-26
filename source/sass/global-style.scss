@@ -47,10 +47,3 @@ img {
 a {
   text-decoration: none;
 }
-
-input:disabled,
-textarea:disabled,
-label:disabled {
-  cursor: not-allowed;
-  opacity: 0.3;
-}

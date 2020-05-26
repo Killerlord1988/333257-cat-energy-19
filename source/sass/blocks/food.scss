@@ -219,9 +219,13 @@
 
   .food__img-block {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     width: 324px;
+    height: 208px;
     left: 0;
-    bottom: 300px;
+    top: -81px;
   }
 
   .food__img {
@@ -369,8 +373,6 @@
   }
 
   .food__img-block {
-    position: absolute;
     width: 245px;
-    bottom: 300px;
   }
 }

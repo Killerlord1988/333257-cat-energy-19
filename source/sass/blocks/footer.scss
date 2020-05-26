@@ -1,5 +1,13 @@
+.footer {
+  background-color: #f2f2f2;
+}
+
 .footer__card:not(.footer__card--index) {
   background-color: $grey-bg;
+}
+
+.footer__card--index {
+  background-color: #ffffff;
 }
 
 .footer__container {
@@ -158,7 +166,8 @@
     z-index: 10;
     position: absolute;
     top: 90px;
-    left: 109px;
+    left: 50%;
+    margin-left: -610px;
     width: 564px;
     padding: 70px 77px;
     min-width: auto;

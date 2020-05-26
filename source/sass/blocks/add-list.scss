@@ -10,13 +10,8 @@
   opacity: 0;
 }
 
-.add-list__item {
-  position: relative;
-  margin-top: 13px;
-  margin-bottom: 13px;
-}
-
 .add-list__label {
+  width: 150px;
   display: inline-block;
   font-size: 16px;
   line-height: 18px;
@@ -48,6 +43,22 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.add-list__input:disabled {
+  opacity: 0;
+}
+
+.add-list__input:disabled + .add-list__label {
+  opacity: 0.3;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.add-list__item {
+  position: relative;
+  margin-top: 13px;
+  margin-bottom: 13px;
 }
 
 .add-list__input:checked + .add-list__label::before {
@@ -101,5 +112,6 @@
   .add-list__item {
     width: 20%;
     margin: 0;
+    margin-bottom: 15px;
   }
 }

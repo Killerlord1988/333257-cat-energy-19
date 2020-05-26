@@ -57,6 +57,7 @@
 
 @media (min-width: $tablet-width) {
   .intro {
+    position: static;
     margin-bottom: 0;
   }
 
@@ -128,7 +129,7 @@
   .intro__desk-green::before {
     content: "";
     position: absolute;
-    top: -182px;
+    top: 0;
     right: 0;
     z-index: -1;
     width: 50%;

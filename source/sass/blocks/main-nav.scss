@@ -21,15 +21,19 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav {
-    flex-grow: 1;
-  }
-
   .main-nav__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
+    width: 500px;
+    margin-top: 15px;
     padding-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    width: 610px;
   }
 }
