@@ -21,6 +21,7 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var htmlmin = require("gulp-htmlmin");
+var ghPages = require('gulp-gh-pages');
 
 gulp.task("clean", function () {
   return del("build");
@@ -101,6 +102,11 @@ gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
   .pipe(webp({quality: 90}))
   .pipe(gulp.dest("build/img"));
+});
+
+gulp.task("deploy", function() {
+  return gulp.src("./build/**/*")
+    .pipe(ghPages());
 });
 
 gulp.task("server", function () {
